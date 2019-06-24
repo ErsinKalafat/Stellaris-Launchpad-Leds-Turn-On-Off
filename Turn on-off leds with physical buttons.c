@@ -1,8 +1,7 @@
 #include "inc/lm4f120h5qr.h"
-/**
- * Port F'nin (3 renk LED ve 2 button) ayarlarini yapar.
- * Derste anlatilan sekilde ayar yapmaktadir. Kodu kitaptaki ornekten aldik.
- */
+
+/* Port F'nin (3 renk LED ve 2 button) ayarlarini yapar. */
+
 void init_port_F() {
 	volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
 	SYSCTL_RCGCGPIO_R |= 0x00000020; // 1) activate clock for Port F
